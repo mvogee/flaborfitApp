@@ -1,9 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainBG"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#2ca5f5"
+    android:orientation="vertical"
     tools:context="com.matthewvogee.flaborfit.DetailsActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/exerciseTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:text="Weight Lifting"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/exerciseImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/weight" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#20000000"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/mark_it_complete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="Mark it Complete!"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <CheckBox
+            android:id="@+id/set1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="100dp"
+            android:text="Complete Set 1"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:buttonTint="#FFF" />
+
+        <CheckBox
+            android:id="@+id/set2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:paddingLeft="100dp"
+            android:text="Complete Set 2"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:buttonTint="#FFF" />
+
+        <CheckBox
+            android:id="@+id/set3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:paddingLeft="100dp"
+            android:text="Complete Set 3"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:buttonTint="#FFF" />
+
+        <CheckBox
+            android:id="@+id/set4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:paddingLeft="100dp"
+            android:text="Complete Set 4"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:buttonTint="#FFF" />
+
+        <CheckBox
+            android:id="@+id/set5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:paddingLeft="100dp"
+            android:text="Complete Set 5"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:buttonTint="#FFF" />
+    </LinearLayout>
+
+</LinearLayout>
