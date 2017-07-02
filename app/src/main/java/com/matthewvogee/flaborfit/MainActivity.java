@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         optionsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // load the options activity which you need to create.
+                loadOptionsActivity();
             }
         });
     }
@@ -54,6 +54,11 @@ public class MainActivity extends AppCompatActivity {
     private void loadDetailActivity(String exerciseTitle) {
         Intent intent = new Intent(MainActivity.this, DetailsActivity.class);
         intent.putExtra(MainActivity.EXTRA_ITEM_TITLE, exerciseTitle);
+        startActivity(intent);
+    }
+
+    private void loadOptionsActivity() {
+        Intent intent = new Intent(MainActivity.this, OptionsActivity.class);
         startActivity(intent);
     }
 }

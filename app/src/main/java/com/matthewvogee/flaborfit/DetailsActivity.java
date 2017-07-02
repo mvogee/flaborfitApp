@@ -23,15 +23,15 @@ public class DetailsActivity extends AppCompatActivity {
 
         if (exerciseTitle.equalsIgnoreCase(MainActivity.EXERCISE_WEIGHTS)) {
             exerciseImage.setImageDrawable(getResources().getDrawable(R.drawable.weight, getApplicationContext().getTheme()));
-            mainBG.setBackgroundColor(Color.parseColor("#2ca5f5"));
+            mainBG.setBackgroundColor(getResources().getColor(R.color.normalWeightsBlue, getApplicationContext().getTheme()));
         }
         else if (exerciseTitle.equalsIgnoreCase(MainActivity.EXERCISE_YOGA)) {
             exerciseImage.setImageDrawable(getResources().getDrawable(R.drawable.lotus, getApplicationContext().getTheme()));
-            mainBG.setBackgroundColor(Color.parseColor("#916bcd"));
+            mainBG.setBackgroundColor(getResources().getColor(R.color.normalYogaPurp, getApplicationContext().getTheme()));
         }
         else {
             exerciseImage.setImageDrawable(getResources().getDrawable(R.drawable.heart, getApplicationContext().getTheme()));
-            mainBG.setBackgroundColor(Color.parseColor("#52ad56"));
+            mainBG.setBackgroundColor(getResources().getColor(R.color.normalCardioGreen, getApplicationContext().getTheme()));
         }
     }
 }

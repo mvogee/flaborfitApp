@@ -3,4 +3,9 @@
     <color name="colorPrimary">#222222</color>
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#ff4081</color>
+    <color name="normalWeightsBlue">#2ca5f5</color>
+    <color name="normalYogaPurp">#916bcd</color>
+    <color name="normalCardioGreen">#52ad56</color>
+    <color name="lightText">#ffffff</color>
+    <color name="darkText">#000000</color>
 </resources>

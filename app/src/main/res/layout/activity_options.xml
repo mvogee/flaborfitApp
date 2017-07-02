@@ -4,6 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     tools:context="com.matthewvogee.flaborfit.OptionsActivity">
 
+    <LinearLayout
+        android:layout_width="304dp"
+        android:layout_height="437dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/normalWeightsBlue"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:weightSum="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/OptionsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Options"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <Switch
+            android:id="@+id/switch_darkMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Dark Mode"
+            android:textColor="#ffffff" />
+
+        <Switch
+            android:id="@+id/switch3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="another option"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

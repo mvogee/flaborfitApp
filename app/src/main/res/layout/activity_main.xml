@@ -35,7 +35,7 @@
             android:layout_marginTop="10dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_corners"
-            android:backgroundTint="#2ca5f5">
+            android:backgroundTint="@color/normalWeightsBlue">
 
             <ImageView
                 android:id="@+id/image_weights"
@@ -56,11 +56,11 @@
                 android:paddingRight="5dp"
                 android:text="30%"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                android:textColor="#ffffff"
+                android:textColor="@color/lightText"
                 android:textSize="40sp" />
 
             <TextView
-                android:id="@+id/namaste"
+                android:id="@+id/runForestRun"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
@@ -69,19 +69,19 @@
                 android:paddingLeft="8dp"
                 android:text="Do you even lift bruh?"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                android:textColor="#ffffff"
+                android:textColor="@color/lightText"
                 android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/weight_lifting"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_above="@+id/namaste"
+                android:layout_above="@+id/runForestRun"
                 android:layout_alignParentStart="true"
                 android:paddingLeft="8dp"
                 android:text="Weight Lifting"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                android:textColor="#ffffff"
+                android:textColor="@color/lightText"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -97,7 +97,7 @@
                 android:text="10 Sets"
                 android:textAlignment="textEnd"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                android:textColor="#ffffff" />
+                android:textColor="@color/lightText" />
 
         </RelativeLayout>
 
@@ -109,7 +109,7 @@
             android:layout_marginTop="5dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_corners"
-            android:backgroundTint="#916bcd">
+            android:backgroundTint="@color/normalYogaPurp">
 
             <ImageView
                 android:id="@+id/image_lotus"
@@ -130,11 +130,11 @@
                 android:paddingRight="5dp"
                 android:text="0%"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                android:textColor="#ffffff"
+                android:textColor="@color/lightText"
                 android:textSize="40sp" />
 
             <TextView
-                android:id="@+id/namaste"
+                android:id="@+id/runForestRun"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
@@ -143,19 +143,19 @@
                 android:paddingLeft="8dp"
                 android:text="Namaste"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                android:textColor="#ffffff"
+                android:textColor="@color/lightText"
                 android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/yoga"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_above="@+id/namaste"
+                android:layout_above="@+id/runForestRun"
                 android:layout_alignParentStart="true"
                 android:paddingLeft="8dp"
                 android:text="Yoga"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                android:textColor="#ffffff"
+                android:textColor="@color/lightText"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -171,7 +171,7 @@
                 android:text="1 Hour"
                 android:textAlignment="textEnd"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                android:textColor="#ffffff" />
+                android:textColor="@color/lightText" />
 
         </RelativeLayout>
 
@@ -182,7 +182,7 @@
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
             android:background="@drawable/rounded_corners"
-            android:backgroundTint="#52ad56">
+            android:backgroundTint="@color/normalCardioGreen">
 
             <ImageView
                 android:id="@+id/image_heart"
@@ -203,11 +203,11 @@
                 android:paddingRight="5dp"
                 android:text="0%"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                android:textColor="#ffffff"
+                android:textColor="@color/lightText"
                 android:textSize="40sp" />
 
             <TextView
-                android:id="@+id/namaste"
+                android:id="@+id/runForestRun"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
@@ -216,19 +216,19 @@
                 android:paddingLeft="8dp"
                 android:text="Run forest run!"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                android:textColor="#ffffff"
+                android:textColor="@color/lightText"
                 android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/cardio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_above="@+id/namaste"
+                android:layout_above="@+id/runForestRun"
                 android:layout_alignParentStart="true"
                 android:paddingLeft="8dp"
                 android:text="Cardio"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                android:textColor="#ffffff"
+                android:textColor="@color/lightText"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -244,7 +244,7 @@
                 android:text="5 Miles"
                 android:textAlignment="textEnd"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                android:textColor="#ffffff" />
+                android:textColor="@color/lightText" />
 
         </RelativeLayout>
 

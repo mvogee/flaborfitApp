@@ -17,7 +17,7 @@
         android:paddingTop="15dp"
         android:text="Weight Lifting"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-        android:textColor="#ffffff"
+        android:textColor="@color/lightText"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -47,7 +47,7 @@
             android:paddingTop="8dp"
             android:text="Mark it Complete!"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:textColor="#ffffff"
+            android:textColor="@color/lightText"
             android:textSize="25sp" />
 
         <CheckBox
@@ -58,7 +58,7 @@
             android:layout_marginTop="5dp"
             android:paddingLeft="100dp"
             android:text="Complete Set 1"
-            android:textColor="#ffffff"
+            android:textColor="@color/lightText"
             android:textSize="20sp"
             app:buttonTint="#FFF" />
 
@@ -69,7 +69,7 @@
             android:layout_marginBottom="8dp"
             android:paddingLeft="100dp"
             android:text="Complete Set 2"
-            android:textColor="#ffffff"
+            android:textColor="@color/lightText"
             android:textSize="20sp"
             app:buttonTint="#FFF" />
 
@@ -80,7 +80,7 @@
             android:layout_marginBottom="8dp"
             android:paddingLeft="100dp"
             android:text="Complete Set 3"
-            android:textColor="#ffffff"
+            android:textColor="@color/lightText"
             android:textSize="20sp"
             app:buttonTint="#FFF" />
 
@@ -91,7 +91,7 @@
             android:layout_marginBottom="8dp"
             android:paddingLeft="100dp"
             android:text="Complete Set 4"
-            android:textColor="#ffffff"
+            android:textColor="@color/lightText"
             android:textSize="20sp"
             app:buttonTint="#FFF" />
 
@@ -102,7 +102,7 @@
             android:layout_marginBottom="8dp"
             android:paddingLeft="100dp"
             android:text="Complete Set 5"
-            android:textColor="#ffffff"
+            android:textColor="@color/lightText"
             android:textSize="20sp"
             app:buttonTint="#FFF" />
     </LinearLayout>
