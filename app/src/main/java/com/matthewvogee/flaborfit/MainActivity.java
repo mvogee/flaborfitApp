@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         RelativeLayout weightBtn = (RelativeLayout)findViewById(R.id.box_weights);
         RelativeLayout yogaBtn = (RelativeLayout)findViewById(R.id.box_lotus);
         RelativeLayout cardioBtn = (RelativeLayout)findViewById(R.id.box_heart);
+        ImageButton optionsBtn = (ImageButton)findViewById(R.id.imageButton_options);
 
         weightBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,7 +42,15 @@ public class MainActivity extends AppCompatActivity {
                 loadDetailActivity(MainActivity.EXERCISE_CARDIO);
             }
         });
+
+        optionsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // load the options activity which you need to create.
+            }
+        });
     }
+
     private void loadDetailActivity(String exerciseTitle) {
         Intent intent = new Intent(MainActivity.this, DetailsActivity.class);
         intent.putExtra(MainActivity.EXTRA_ITEM_TITLE, exerciseTitle);

@@ -1,238 +1,267 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
     android:orientation="vertical"
-    android:weightSum="3"
     tools:context="com.matthewvogee.flaborfit.MainActivity">
 
-    <RelativeLayout
-        android:id="@+id/box_weights"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_weight="1"
-        android:background="@drawable/rounded_corners"
-        android:backgroundTint="#2ca5f5">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:weightSum="3"
+        tools:context="com.matthewvogee.flaborfit.MainActivity"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/image_weights"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:contentDescription="weights"
-            app:srcCompat="@drawable/weight" />
-
-        <TextView
-            android:id="@+id/weights_percentage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentLeft="true"
-            android:paddingRight="5dp"
-            android:text="30%"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:textColor="#ffffff"
-            android:textSize="40sp" />
-
-        <TextView
-            android:id="@+id/namaste"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true"
-            android:paddingBottom="2dp"
-            android:paddingLeft="8dp"
-            android:text="Do you even lift bruh?"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:textColor="#ffffff"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/weight_lifting"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/namaste"
-            android:layout_alignParentStart="true"
-            android:paddingLeft="8dp"
-            android:text="Weight Lifting"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:textColor="#ffffff"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/weights_sets"
-            android:layout_width="125dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
+        <RelativeLayout
+            android:id="@+id/box_weights"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
             android:background="@drawable/rounded_corners"
-            android:backgroundTint="#20000000"
-            android:padding="5dp"
-            android:text="10 Sets"
-            android:textAlignment="textEnd"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:textColor="#ffffff" />
+            android:backgroundTint="#2ca5f5">
 
-    </RelativeLayout>
+            <ImageView
+                android:id="@+id/image_weights"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="weights"
+                app:srcCompat="@drawable/weight" />
 
-    <RelativeLayout
-        android:id="@+id/box_lotus"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="5dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="5dp"
-        android:layout_weight="1"
-        android:background="@drawable/rounded_corners"
-        android:backgroundTint="#916bcd">
+            <TextView
+                android:id="@+id/weights_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:paddingRight="5dp"
+                android:text="30%"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="#ffffff"
+                android:textSize="40sp" />
 
-        <ImageView
-            android:id="@+id/image_lotus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:contentDescription="lotus"
-            app:srcCompat="@drawable/lotus" />
+            <TextView
+                android:id="@+id/namaste"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:paddingBottom="2dp"
+                android:paddingLeft="8dp"
+                android:text="Do you even lift bruh?"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/yoga_percentage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentLeft="true"
-            android:paddingRight="5dp"
-            android:text="0%"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:textColor="#ffffff"
-            android:textSize="40sp" />
+            <TextView
+                android:id="@+id/weight_lifting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/namaste"
+                android:layout_alignParentStart="true"
+                android:paddingLeft="8dp"
+                android:text="Weight Lifting"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/namaste"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true"
-            android:paddingBottom="2dp"
-            android:paddingLeft="8dp"
-            android:text="Namaste"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:textColor="#ffffff"
-            android:textSize="18sp" />
+            <TextView
+                android:id="@+id/weights_sets"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/rounded_corners"
+                android:backgroundTint="#20000000"
+                android:padding="5dp"
+                android:text="10 Sets"
+                android:textAlignment="textEnd"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="#ffffff" />
 
-        <TextView
-            android:id="@+id/yoga"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/namaste"
-            android:layout_alignParentStart="true"
-            android:paddingLeft="8dp"
-            android:text="Yoga"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:textColor="#ffffff"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+        </RelativeLayout>
 
-        <TextView
-            android:id="@+id/yoga_time"
-            android:layout_width="125dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
+        <RelativeLayout
+            android:id="@+id/box_lotus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
             android:background="@drawable/rounded_corners"
-            android:backgroundTint="#20000000"
-            android:padding="5dp"
-            android:text="1 Hour"
-            android:textAlignment="textEnd"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:textColor="#ffffff" />
+            android:backgroundTint="#916bcd">
 
-    </RelativeLayout>
+            <ImageView
+                android:id="@+id/image_lotus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="lotus"
+                app:srcCompat="@drawable/lotus" />
 
-    <RelativeLayout
-        android:id="@+id/box_heart"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_weight="1"
-        android:background="@drawable/rounded_corners"
-        android:backgroundTint="#52ad56">
+            <TextView
+                android:id="@+id/yoga_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:paddingRight="5dp"
+                android:text="0%"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="#ffffff"
+                android:textSize="40sp" />
 
-        <ImageView
-            android:id="@+id/image_heart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:contentDescription="heart"
-            app:srcCompat="@drawable/heart" />
+            <TextView
+                android:id="@+id/namaste"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:paddingBottom="2dp"
+                android:paddingLeft="8dp"
+                android:text="Namaste"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/cardio_percentage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentLeft="true"
-            android:paddingRight="5dp"
-            android:text="0%"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:textColor="#ffffff"
-            android:textSize="40sp" />
+            <TextView
+                android:id="@+id/yoga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/namaste"
+                android:layout_alignParentStart="true"
+                android:paddingLeft="8dp"
+                android:text="Yoga"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/namaste"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true"
-            android:paddingBottom="2dp"
-            android:paddingLeft="8dp"
-            android:text="Run forest run!"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:textColor="#ffffff"
-            android:textSize="18sp" />
+            <TextView
+                android:id="@+id/yoga_time"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/rounded_corners"
+                android:backgroundTint="#20000000"
+                android:padding="5dp"
+                android:text="1 Hour"
+                android:textAlignment="textEnd"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="#ffffff" />
 
-        <TextView
-            android:id="@+id/cardio"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/namaste"
-            android:layout_alignParentStart="true"
-            android:paddingLeft="8dp"
-            android:text="Cardio"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:textColor="#ffffff"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+        </RelativeLayout>
 
-        <TextView
-            android:id="@+id/cardio_distance"
-            android:layout_width="125dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
+        <RelativeLayout
+            android:id="@+id/box_heart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
             android:background="@drawable/rounded_corners"
-            android:backgroundTint="#20000000"
-            android:padding="5dp"
-            android:text="5 Miles"
-            android:textAlignment="textEnd"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:textColor="#ffffff" />
+            android:backgroundTint="#52ad56">
 
-    </RelativeLayout>
+            <ImageView
+                android:id="@+id/image_heart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="heart"
+                app:srcCompat="@drawable/heart" />
 
-</LinearLayout>
+            <TextView
+                android:id="@+id/cardio_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:paddingRight="5dp"
+                android:text="0%"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="#ffffff"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/namaste"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:paddingBottom="2dp"
+                android:paddingLeft="8dp"
+                android:text="Run forest run!"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/cardio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/namaste"
+                android:layout_alignParentStart="true"
+                android:paddingLeft="8dp"
+                android:text="Cardio"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cardio_distance"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/rounded_corners"
+                android:backgroundTint="#20000000"
+                android:padding="5dp"
+                android:text="5 Miles"
+                android:textAlignment="textEnd"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/colorPrimary"
+        android:padding="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/settings_btn"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+</android.support.constraint.ConstraintLayout>
