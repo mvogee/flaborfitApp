@@ -5,15 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
+    android:padding="16dp"
     tools:context="com.matthewvogee.flaborfit.OptionsActivity">
 
     <LinearLayout
-        android:layout_width="304dp"
-        android:layout_height="437dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/rounded_corners"
         android:backgroundTint="@color/normalWeightsBlue"
         android:orientation="vertical"
-        android:padding="24dp"
+        android:padding="16dp"
         android:weightSum="3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -27,7 +30,7 @@
             android:gravity="center"
             android:text="Options"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:textColor="#ffffff"
+            android:textColor="@android:color/background_light"
             android:textSize="25sp" />
 
         <Switch
@@ -36,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="Dark Mode"
-            android:textColor="#ffffff" />
+            android:textColor="@color/lightText" />
 
         <Switch
             android:id="@+id/switch3"
@@ -44,7 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="another option"
-            android:textColor="#ffffff" />
+            android:textColor="@color/lightText" />
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
