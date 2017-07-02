@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class DetailsActivity extends AppCompatActivity {
@@ -23,15 +24,24 @@ public class DetailsActivity extends AppCompatActivity {
 
         if (exerciseTitle.equalsIgnoreCase(MainActivity.EXERCISE_WEIGHTS)) {
             exerciseImage.setImageDrawable(getResources().getDrawable(R.drawable.weight, getApplicationContext().getTheme()));
-            mainBG.setBackgroundColor(getResources().getColor(R.color.normalWeightsBlue, getApplicationContext().getTheme()));
+            if (MainActivity.OptDarkMode)
+                mainBG.setBackgroundColor(getResources().getColor(R.color.normalWeightsBlue, getApplicationContext().getTheme()));
+            else
+                mainBG.setBackgroundColor(getResources().getColor(R.color.normalWeightsBlue, getApplicationContext().getTheme()));
         }
         else if (exerciseTitle.equalsIgnoreCase(MainActivity.EXERCISE_YOGA)) {
             exerciseImage.setImageDrawable(getResources().getDrawable(R.drawable.lotus, getApplicationContext().getTheme()));
-            mainBG.setBackgroundColor(getResources().getColor(R.color.normalYogaPurp, getApplicationContext().getTheme()));
+            if (MainActivity.OptDarkMode)
+                mainBG.setBackgroundColor(getResources().getColor(R.color.normalYogaPurp, getApplicationContext().getTheme()));
+            else
+                mainBG.setBackgroundColor(getResources().getColor(R.color.normalYogaPurp, getApplicationContext().getTheme()));
         }
         else {
             exerciseImage.setImageDrawable(getResources().getDrawable(R.drawable.heart, getApplicationContext().getTheme()));
-            mainBG.setBackgroundColor(getResources().getColor(R.color.normalCardioGreen, getApplicationContext().getTheme()));
+            if (MainActivity.OptDarkMode)
+                mainBG.setBackgroundColor(getResources().getColor(R.color.normalCardioGreen, getApplicationContext().getTheme()));
+            else
+                mainBG.setBackgroundColor(getResources().getColor(R.color.normalCardioGreen, getApplicationContext().getTheme()));
         }
     }
 }

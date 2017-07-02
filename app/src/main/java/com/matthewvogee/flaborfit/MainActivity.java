@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String EXERCISE_WEIGHTS = "Weight Lifting";
     public static final String EXERCISE_YOGA = "Yoga";
     public static final String EXERCISE_CARDIO = "Cardio";
+    public static boolean OptDarkMode = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

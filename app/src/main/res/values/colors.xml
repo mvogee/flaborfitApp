@@ -2,6 +2,8 @@
 <resources>
     <color name="colorPrimary">#222222</color>
     <color name="colorPrimaryDark">#000000</color>
+    <color name="colorBackgroudnLight">#ffffff</color>
+    <color name="colorBackgroundDark">#000000</color>
     <color name="colorAccent">#ff4081</color>
     <color name="normalWeightsBlue">#2ca5f5</color>
     <color name="normalYogaPurp">#916bcd</color>
